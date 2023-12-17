@@ -7,6 +7,6 @@ docker build -t imagename:tag dockerfile_location
 docker ls 
 docker ls -a
 docker run -it -p host:container --name=container_name imagename /bin/bash
-docker start container_name
+docker start -i container_name
 docker stop container_name
-docker rm container_name
+docker rm container_name --force
