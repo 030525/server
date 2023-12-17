@@ -1,0 +1,12 @@
+
+//image
+docker image ls
+docker build -t imagename:tag dockerfile_location
+
+//container
+docker ls 
+docker ls -a
+docker run -it -p host:container --name=container_name imagename /bin/bash
+docker start container_name
+docker stop container_name
+docker rm container_name
