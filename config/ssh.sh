@@ -1,5 +1,6 @@
 #!/usr/bin/bash
 
+systemctl enable ssh
 ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa
 
 touch ~/.ssh/authorized_keys  
